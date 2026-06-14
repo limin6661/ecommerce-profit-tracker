@@ -1,0 +1,33 @@
+name: Daily Health Check
+
+# 每天 UTC 06:13 自动检查落地页和结账链路是否健康，
+# 让仓库保持活跃（GitHub 算法偏好活跃仓库）并提供部署监控。
+on:
+  schedule:
+    - cron: '13 6 * * *'   # 每天 UTC 06:13 运行
+  workflow_dispatch:        # 允许手动触发
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check landing page
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" https://limin6661.github.io/ecommerce-profit-tracker/)
+          echo "Landing page HTTP: $code"
+          [ "$code" = "200" ] || exit 1
+
+      - name: Check free calculator
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" https://limin6661.github.io/ecommerce-profit-tracker/calculator.html)
+          echo "Calculator HTTP: $code"
+          [ "$code" = "200" ] || exit 1
+
+      - name: Check checkout link
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw)
+          echo "Checkout HTTP: $code"
+          [ "$code" = "200" ] || exit 1
+
+      - name: Health OK
+        run: echo "✅ All endpoints healthy"
