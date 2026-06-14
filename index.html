@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecommerce Profit Tracker PRO — Know Your REAL Profit Per Order | Excel & Google Sheets</title>
+<meta name="description" content="Track REAL profit on every Etsy, Shopify & Amazon order. Auto-calculates fees, ads, shipping & tax. Color-coded orders, profit dashboard, product ranking & invoice maker. Works in Excel and Google Sheets.">
+<meta name="keywords" content="etsy profit tracker, ecommerce profit spreadsheet, seller profit calculator, excel template, google sheets template, etsy seller tools, shopify profit tracker, amazon seller spreadsheet, ecommerce dashboard, inventory tracker">
+<meta property="og:title" content="Ecommerce Profit Tracker PRO — Know Your REAL Profit">
+<meta property="og:description" content="Stop guessing if you're actually making money. This tracker shows your real profit per order — after all fees, ads & shipping.">
+<meta property="og:image" content="cover.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="cover.png">
+<style>
+:root{
+  --navy:#1F2A44; --gold:#C9A227; --green:#2E7D32; --red:#C62828;
+  --light:#F4F6FA; --grey:#5A6473; --line:#D6DCE5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#222;line-height:1.6;background:#fff}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#1F2A44 0%,#2a3858 100%);color:#fff;padding:80px 0 100px;text-align:center}
+.badge{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:6px 16px;border-radius:20px;font-size:13px;letter-spacing:1px;margin-bottom:20px}
+.hero h1{font-size:52px;line-height:1.15;margin-bottom:18px;font-weight:800}
+.hero h1 .gold{color:var(--gold)}
+.hero p.sub{font-size:20px;color:#cdd5e6;max-width:680px;margin:0 auto 30px}
+.hero .price-tag{font-size:16px;color:#aab4cc;margin-bottom:28px}
+.hero .price-tag s{color:#7c87a3}
+.hero .price-tag b{color:var(--gold);font-size:22px}
+.cta{display:inline-block;background:var(--green);color:#fff;font-size:20px;font-weight:700;padding:16px 48px;border-radius:10px;text-decoration:none;box-shadow:0 6px 20px rgba(46,125,50,.35);transition:transform .15s}
+.cta:hover{transform:translateY(-2px)}
+.trust{margin-top:24px;font-size:14px;color:#aab4cc}
+
+/* PAIN */
+.pain{background:var(--light);padding:70px 0;text-align:center}
+.pain h2{font-size:34px;color:var(--navy);margin-bottom:14px}
+.pain .q{font-size:21px;color:#444;max-width:700px;margin:0 auto 40px}
+.pain-img{max-width:900px;width:100%;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.12);display:block;margin:0 auto}
+
+/* FEATURES */
+.features{padding:80px 0}
+.features h2{text-align:center;font-size:34px;color:var(--navy);margin-bottom:50px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:32px 24px;text-align:center;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 10px 30px rgba(31,42,68,.1);transform:translateY(-4px)}
+.card .icon{font-size:40px;margin-bottom:14px}
+.card h3{color:var(--navy);font-size:19px;margin-bottom:10px}
+.card p{color:var(--grey);font-size:15px}
+
+/* SCREENSHOTS */
+.shots{background:var(--light);padding:80px 0}
+.shots h2{text-align:center;font-size:34px;color:var(--navy);margin-bottom:50px}
+.shot{margin-bottom:40px;text-align:center}
+.shot img{max-width:900px;width:100%;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.12)}
+.shot .cap{margin-top:14px;color:var(--grey);font-size:16px;font-weight:600}
+
+/* WHO */
+.who{padding:80px 0;text-align:center}
+.who h2{font-size:34px;color:var(--navy);margin-bottom:24px}
+.channels{font-size:22px;color:var(--grey);font-weight:600}
+
+/* FAQ */
+.faq{background:var(--light);padding:80px 0}
+.faq h2{text-align:center;font-size:34px;color:var(--navy);margin-bottom:40px}
+.faq-item{max-width:760px;margin:0 auto 20px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px 28px}
+.faq-item h3{color:var(--navy);font-size:17px;margin-bottom:8px}
+.faq-item p{color:var(--grey);font-size:15px}
+
+/* FINAL CTA */
+.final{background:linear-gradient(135deg,#1F2A44 0%,#2a3858 100%);color:#fff;padding:90px 0;text-align:center}
+.final h2{font-size:38px;margin-bottom:16px}
+.final p{font-size:19px;color:#cdd5e6;margin-bottom:34px}
+.final .price-tag{font-size:18px;color:#aab4cc;margin-bottom:28px}
+.final .price-tag b{color:var(--gold);font-size:26px}
+
+footer{background:#161e30;color:#8893a8;padding:30px 0;text-align:center;font-size:14px}
+
+@media(max-width:760px){
+  .hero h1{font-size:36px}
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">EXCEL & GOOGLE SHEETS</span>
+    <h1>Are you actually making money?<br><span class="gold">Know your REAL profit.</span></h1>
+    <p class="sub">Most sellers track revenue. Few track <b>real profit</b>. This tracker calculates your true profit on every order — after platform fees, ads, shipping & tax — automatically.</p>
+    <div class="price-tag"><s>$29</s> &nbsp; Launch price: <b>$19</b></div>
+    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw">Get Instant Access — $19</a>
+    <div class="trust">⚡ Instant download &nbsp;•&nbsp; ✓ Lifetime use &nbsp;•&nbsp; 🔒 Secure checkout</div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="wrap">
+    <h2>The gap most sellers never see</h2>
+    <p class="q">A $22 sale can actually <b style="color:var(--red)">lose you money</b> once you count fees, ads & shipping. If you're not subtracting all of it, you don't know your real profit.</p>
+    <img class="pain-img" src="shot5_reality.png" alt="Sale price $22 looks profitable but real profit is minus $1.14 after fees and ads">
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="wrap">
+    <h2>Everything you need to run a profitable store</h2>
+    <div class="grid">
+      <div class="card"><div class="icon">🟢</div><h3>Real Profit Per Order</h3><p>Net profit auto-calculated after fees, ads, shipping & tax. Green = profit, red = loss — spot losing orders instantly.</p></div>
+      <div class="card"><div class="icon">📊</div><h3>Auto Dashboard</h3><p>Total revenue, total profit, profit margin & profit-by-channel chart. Updates the moment you log a sale.</p></div>
+      <div class="card"><div class="icon">🏆</div><h3>Product Ranking</h3><p>See which products are your real winners — and which are quietly losing money. Make smarter pricing decisions.</p></div>
+      <div class="card"><div class="icon">📦</div><h3>Inventory Tracker</h3><p>Stock value, low-stock alerts & supplier notes. Know exactly when to reorder.</p></div>
+      <div class="card"><div class="icon">🧾</div><h3>Invoice Maker</h3><p>Type an order ID, get a printable invoice instantly. Professional and ready to send.</p></div>
+      <div class="card"><div class="icon">⚙️</div><h3>Excel & Google Sheets</h3><p>Works in both. Real formulas — not screenshots. Sample data included so you see it work immediately.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="shots">
+  <div class="wrap">
+    <h2>See it in action</h2>
+    <div class="shot"><img src="shot1_dashboard.png" alt="Profit dashboard showing total revenue total profit and profit margin"><div class="cap">Dashboard — your whole business at a glance</div></div>
+    <div class="shot"><img src="shot2_orders.png" alt="Orders list with green profit rows and red loss rows"><div class="cap">Orders — color-coded green (profit) & red (loss)</div></div>
+    <div class="shot"><img src="shot3_products.png" alt="Product profit ranking showing winners and money losers"><div class="cap">Product Ranking — winners vs money-losers</div></div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section class="who">
+  <div class="wrap">
+    <h2>Built for online sellers</h2>
+    <div class="channels">Etsy &nbsp;•&nbsp; Shopify &nbsp;•&nbsp; Amazon &nbsp;•&nbsp; eBay &nbsp;•&nbsp; WooCommerce &nbsp;•&nbsp; Instagram</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item"><h3>Do I need to know Excel?</h3><p>No. If you can type a number into a cell, you can use this. Every formula is already built in.</p></div>
+    <div class="faq-item"><h3>Does it work in Google Sheets?</h3><p>Yes. Upload the .xlsx to Google Drive and open with Google Sheets — all formulas carry over.</p></div>
+    <div class="faq-item"><h3>Can I track multiple shops?</h3><p>Yes — there's a Channel dropdown on every order, and the dashboard breaks profit down by channel.</p></div>
+    <div class="faq-item"><h3>How do I get it?</h3><p>Click "Get Instant Access", complete secure checkout, and download immediately. Lifetime use, no subscription.</p></div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2>Stop guessing. Start counting.</h2>
+    <p>See your real profit today — and fix the orders that are losing you money.</p>
+    <div class="price-tag"><s>$29</s> &nbsp; Launch price: <b>$19</b></div>
+    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw">Get Instant Access — $19</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Ecommerce Profit Tracker PRO · Instant download · Lifetime use</div>
+</footer>
+
+</body>
+</html>
