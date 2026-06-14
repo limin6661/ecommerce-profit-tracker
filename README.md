@@ -6,7 +6,7 @@
 
 ### Know your **REAL** profit per order. Stop guessing. Start keeping.
 
-[🛒 **Get it now — $19**](https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw) · [🌐 Live Demo & Full Features](https://limin6661.github.io/ecommerce-profit-tracker/)
+[🛒 **Get it now — $19**](https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw) · [🧮 **Try the free profit calculator**](https://limin6661.github.io/ecommerce-profit-tracker/calculator.html) · [🌐 Live Demo & Full Features](https://limin6661.github.io/ecommerce-profit-tracker/)
 
 **Excel & Google Sheets · No subscriptions · No macros · One-time payment**
 
