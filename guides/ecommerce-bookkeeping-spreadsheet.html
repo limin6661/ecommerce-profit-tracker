@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecommerce Bookkeeping Spreadsheet 2026: Track Profit, Orders & Inventory in Excel</title>
+<meta name="description" content="Ecommerce bookkeeping spreadsheet for Etsy, Shopify, Amazon & eBay sellers. Track orders, fees, COGS, and net profit in one Excel template. Works in Google Sheets too.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#ffffff;color:#1a1a1a;line-height:1.75;padding:24px}
+  .wrap{max-width:720px;margin:0 auto}
+  a.back{display:inline-block;color:#2563eb;text-decoration:none;font-size:14px;margin-bottom:24px}
+  a.back:hover{text-decoration:underline}
+  h1{font-size:32px;line-height:1.3;margin-bottom:8px;color:#1a1a1a}
+  .date{color:#9ca3af;font-size:14px;margin-bottom:32px}
+  h2{font-size:24px;margin:32px 0 12px;color:#1a1a1a}
+  h3{font-size:19px;margin:24px 0 10px;color:#1a1a1a}
+  p{margin-bottom:16px;font-size:17px}
+  ul,ol{margin:0 0 16px 24px;font-size:17px}
+  li{margin-bottom:8px}
+  code,.formula{font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;background:#f3f4f6;padding:2px 6px;border-radius:4px;font-size:15px}
+  .formula{display:block;padding:16px;margin:16px 0;background:#f3f4f6;border-left:3px solid #2563eb;border-radius:4px;font-size:15px;line-height:1.6}
+  .calc{background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:20px;margin:20px 0}
+  .calc table{width:100%;border-collapse:collapse;font-size:15px}
+  .calc td{padding:6px 0;border-bottom:1px solid #eef0f3}
+  .calc td:last-child{text-align:right;font-family:"SFMono-Regular",Consolas,monospace}
+  .calc .net{font-weight:700;color:#2563eb;border-bottom:none;padding-top:10px}
+  .cta{display:inline-block;background:#2563eb;color:#fff;text-decoration:none;padding:14px 28px;border-radius:8px;font-weight:600;margin:8px 0}
+  .cta:hover{background:#1d4ed8}
+  .cta-wrap{text-align:center;margin:32px 0;padding:24px;background:#f9fafb;border-radius:8px}
+  blockquote{border-left:3px solid #2563eb;padding:8px 16px;margin:16px 0;color:#4b5563;background:#f9fafb;border-radius:0 4px 4px 0}
+  .warn{border-left:3px solid #dc2626;padding:12px 16px;margin:16px 0;background:#fef2f2;border-radius:0 4px 4px 0;color:#7f1d1d;font-size:16px}
+  footer{margin-top:40px;padding-top:24px;border-top:1px solid #e5e7eb;font-size:13px;color:#9ca3af}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="https://limin6661.github.io/ecommerce-profit-tracker/">&larr; Back to main site</a>
+  <h1>Ecommerce Bookkeeping Spreadsheet: Track Every Order, Fee &amp; Profit in One Place</h1>
+  <p class="date">Published June 17, 2026</p>
+
+  <p>Most ecommerce sellers track revenue in one place, fees in another, and COGS nowhere. By tax time, reconstructing profit is a week-long project. A proper bookkeeping spreadsheet changes that — order log, automatic fee calculation, COGS tracking, and a dashboard you can glance at in 10 seconds.</p>
+
+  <h2>Why Ecommerce Bookkeeping Is Different</h2>
+  <p>Revenue is not bankable. What lands in your bank account can be 40-60% less than what your store reports as "sales." Ecommerce sellers face a unique set of bookkeeping challenges that a simple income/expense ledger does not capture:</p>
+  <ul>
+    <li><strong>Fee stacks:</strong> Each platform deducts 6-8 separate fees per order — listing fees, transaction fees, payment processing, ad fees, subscription costs. They hit at different times on different statements.</li>
+    <li><strong>Multi-channel complexity:</strong> Selling on Etsy, Shopify, Amazon, and eBay means four different fee structures, four payout schedules, and four CSV formats to reconcile.</li>
+    <li><strong>Inventory-as-COGS timing:</strong> You bought materials in January, sold the product in March, and paid shipping in March — matching COGS to the right order across time periods is where spreadsheets break.</li>
+    <li><strong>Refunds reverse profit:</strong> A refund in July wipes profit you already booked in June. Without per-order tracking, refunds land as a mystery expense with no connection to the original sale.</li>
+    <li><strong>Ad spend attribution:</strong> Etsy Ads, Amazon PPC, Facebook ads — spend hits your credit card, not a platform deduction. Attributing ad cost to the specific orders it generated is manual and error-prone without a system.</li>
+  </ul>
+
+  <blockquote>An ecommerce bookkeeping spreadsheet does what QuickBooks cannot: it ties every fee, every ad dollar, and every unit of COGS directly to a specific order, so you know exactly which products and channels make money.</blockquote>
+
+  <h2>What an Ecommerce Bookkeeping Spreadsheet Must Include</h2>
+
+  <h3>Order log with platform, SKU, price &amp; fees — the foundation</h3>
+  <p>Every order gets one row. Platform name, order ID, SKU, sale price, and every fee broken out into its own column. This is the single source of truth that everything else — dashboard, tax reports, profit analysis — pulls from. No more cross-referencing three CSV exports.</p>
+
+  <h3>Automatic fee calculation per platform</h3>
+  <p>Etsy takes 6.5% + $0.20 + $0.25 payment processing (plus Offsite Ads at 12-15%). Amazon charges a 15% referral fee plus variable closing fees. eBay is 13.25% in most categories plus $0.30 per order. A good bookkeeping sheet has these formulas pre-built. You select the platform from a dropdown and the fees calculate automatically.</p>
+
+  <h3>COGS and inventory tracking — match costs to specific orders</h3>
+  <p>Your cost of goods sold is not one number. Different SKUs have different material costs. The sheet must let you set a per-SKU COGS and automatically pull it into each order line. Bonus: a running inventory count that decreases as orders are logged, so you know when to reorder without checking physical stock.</p>
+
+  <h3>Ad spend tracker — ROAS per channel per product</h3>
+  <p>Log ad spend by channel (Etsy Ads, Amazon PPC, Meta, Google) and assign it to products. The sheet calculates ROAS per channel and per SKU, so you see whether that $200 Facebook campaign actually generated profitable orders — or just generated revenue that fees and COGS turned into a loss.</p>
+
+  <h3>Real-time dashboard — revenue, net profit, margin %, by-channel breakdown</h3>
+  <p>One tab you open for 10 seconds and understand your entire business. Total revenue, total fees, net profit, and profit margin percentage. Broken down by platform so you see that Amazon does 3x your Etsy volume but at half the margin. No pivot tables, no filtering — the dashboard updates as you log orders.</p>
+
+  <h3>Invoice generator — tied to actual orders, not guesswork</h3>
+  <p>For wholesale buyers, tax records, or B2B customers who need documentation. Generate a clean invoice from any order row with one click. Line items, fees, totals — all pulled from the data you already logged, formatted and ready to send.</p>
+
+  <div class="cta-wrap">
+    <p style="margin-bottom:12px"><strong>Stop guessing your ecommerce bookkeeping.</strong></p>
+    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw">Get the Bookkeeping Spreadsheet — $19</a>
+  </div>
+
+  <h2>DIY vs Ready-Made: The Real Trade-Off</h2>
+  <div class="calc">
+    <table>
+      <tr><th></th><th>DIY Build</th><th>Ready-Made</th></tr>
+      <tr><td><strong>Setup time</strong></td><td>10+ hours</td><td>5 minutes</td></tr>
+      <tr><td><strong>Fee formulas</strong></td><td>Manual research + formulas</td><td>Built-in for all platforms</td></tr>
+      <tr><td><strong>Inventory tracking</strong></td><td>Build yourself</td><td>Included</td></tr>
+      <tr><td><strong>Dashboard</strong></td><td>Custom build</td><td>Pre-made</td></tr>
+      <tr><td><strong>Updates</strong></td><td>You maintain</td><td>Included</td></tr>
+      <tr><td><strong>Tax-ready reports</strong></td><td>Manual export</td><td>Formula-ready</td></tr>
+      <tr style="border-top:2px solid #d1d5db"><td><strong>Cost</strong></td><td>$0 + your hours</td><td><strong>$19 once</strong></td></tr>
+    </table>
+  </div>
+  <p>At $20/hour your time is worth something — spending 10 hours to build a sheet that might have formula errors costs more than $19. And if a bad formula underreports your profit by 5% all year, the tax implications cost far more than the spreadsheet.</p>
+
+  <div class="warn"><strong>Hidden risk of DIY:</strong> A single misplaced cell reference in a fee formula can silently misreport your profit across hundreds of orders. One seller discovered a formula error in their self-built sheet that had been understating COGS for 11 months — the "profits" they had been celebrating did not exist.</div>
+
+  <h2>Real-World Example: Tracking One Order</h2>
+  <p>Let's walk through an Etsy order at $45. Here is what actually happens to that $45 — and what the spreadsheet captures in two line entries (one for the sale, one for COGS/shipping).</p>
+  <div class="calc">
+    <table>
+      <tr><td>Sale price</td><td>$45.00</td></tr>
+      <tr><td>Listing fee</td><td>&minus;$0.20</td></tr>
+      <tr><td>Transaction fee (6.5%)</td><td>&minus;$2.93</td></tr>
+      <tr><td>Payment processing (3% + $0.25)</td><td>&minus;$1.60</td></tr>
+      <tr><td>COGS</td><td>&minus;$12.00</td></tr>
+      <tr><td>Shipping</td><td>&minus;$5.00</td></tr>
+      <tr class="net"><td>Net profit on this order</td><td>$23.27</td></tr>
+    </table>
+  </div>
+  <p>Plug this order into the bookkeeping spreadsheet and two things happen instantly: the dashboard updates to reflect the new net profit and margin (51.7%), and the inventory count for this SKU drops by one. Two line entries. Complete financial picture.</p>
+
+  <blockquote>Most sellers log the $45 sale and stop there. They feel profitable. The spreadsheet shows $23.27 in real profit — and that is the number that matters for pricing, taxes, and knowing whether you can afford to scale.</blockquote>
+
+  <h2>Get Your Bookkeeping Under Control Today</h2>
+  <p>You do not need another SaaS subscription. You need one spreadsheet that does the job — order log, fee calculator, inventory tracker, dashboard, invoice generator — with formulas you can audit and data you own. A one-time purchase that works in Excel and Google Sheets, no macros, no recurring billing.</p>
+
+  <div class="cta-wrap">
+    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw">Get the Ecommerce Bookkeeping Spreadsheet — track every order in 5 minutes.</a>
+    <p style="margin-top:12px;font-size:14px;color:#6b7280">One-time payment &middot; Excel &amp; Google Sheets &middot; Built-in platform fee formulas</p>
+  </div>
+
+  <footer>
+    <p>Bookkeeping recommendations current as of 2026. Always verify tax reporting requirements with a qualified professional. &middot; Related: <a href="etsy-profit-calculator.html">Etsy Profit Calculator</a>, <a href="ecommerce-profit-calculator.html">Profit Calculator</a>, <a href="amazon-fba-profit-calculator.html">Amazon FBA Profit</a>, <a href="shopify-profit-margin.html">Profit Margins</a></p>
+  </footer>
+</div>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "name":"Ecommerce Bookkeeping Spreadsheet 2026: Track Profit, Orders & Inventory in Excel",
+  "description":"Ecommerce bookkeeping spreadsheet for Etsy, Shopify, Amazon & eBay sellers. Track orders, fees, COGS, and net profit in one Excel template. Works in Google Sheets too.",
+  "author":{"@type":"Organization","name":"Ecommerce Profit Tracker PRO"},
+  "datePublished":"2026-06-17",
+  "mainEntityOfPage":"https://limin6661.github.io/ecommerce-profit-tracker/guides/ecommerce-bookkeeping-spreadsheet.html"
+}
+</script>
+</body>
+</html>
