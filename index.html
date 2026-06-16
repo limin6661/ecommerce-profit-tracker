@@ -49,24 +49,58 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Ar
 .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
 a{color:inherit}
 
+/* TOP ANNOUNCEMENT BAR */
+.topbar{background:var(--gold);color:var(--navy);text-align:center;padding:9px 16px;font-size:14px;font-weight:600;letter-spacing:.2px}
+.topbar a{color:var(--navy);text-decoration:underline;text-underline-offset:2px;font-weight:700}
+.topbar .pill{display:inline-block;background:var(--navy);color:var(--gold);padding:2px 8px;border-radius:10px;font-size:11px;letter-spacing:1px;margin-right:8px;vertical-align:1px}
+
 /* HERO */
-.hero{background:linear-gradient(135deg,#1F2A44 0%,#2a3858 100%);color:#fff;padding:80px 0 100px;text-align:center}
-.badge{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:6px 16px;border-radius:20px;font-size:13px;letter-spacing:1px;margin-bottom:20px}
+.hero{background:linear-gradient(135deg,#1F2A44 0%,#2a3858 100%);color:#fff;padding:60px 0 100px;text-align:center}
+.badge{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;padding:6px 16px;border-radius:20px;font-size:13px;letter-spacing:1px;margin-bottom:18px}
+.urgency{display:inline-block;background:rgba(198,40,40,.15);color:#ff8a8a;border:1px solid rgba(198,40,40,.4);font-weight:700;padding:5px 14px;border-radius:16px;font-size:12px;letter-spacing:.8px;margin-bottom:18px}
 .hero h1{font-size:52px;line-height:1.15;margin-bottom:18px;font-weight:800}
 .hero h1 .gold{color:var(--gold)}
-.hero p.sub{font-size:20px;color:#cdd5e6;max-width:680px;margin:0 auto 30px}
-.hero .price-tag{font-size:16px;color:#aab4cc;margin-bottom:28px}
-.hero .price-tag s{color:#7c87a3}
-.hero .price-tag b{color:var(--gold);font-size:22px}
-.cta{display:inline-block;background:var(--green);color:#fff;font-size:20px;font-weight:700;padding:16px 48px;border-radius:10px;text-decoration:none;box-shadow:0 6px 20px rgba(46,125,50,.35);transition:transform .15s}
+.hero p.sub{font-size:20px;color:#cdd5e6;max-width:680px;margin:0 auto 26px}
+.price-block{margin-bottom:28px}
+.price-block .strike{font-size:18px;color:#7c87a3;text-decoration:line-through;margin-right:6px}
+.price-block .now{font-size:42px;color:var(--gold);font-weight:800;vertical-align:-2px}
+.price-block .onepay{display:block;font-size:14px;color:#cdd5e6;margin-top:4px}
+.cta{display:inline-block;background:var(--green);color:#fff;font-size:21px;font-weight:800;padding:18px 44px;border-radius:12px;text-decoration:none;box-shadow:0 8px 24px rgba(46,125,50,.4);transition:transform .15s}
 .cta:hover{transform:translateY(-2px)}
-.trust{margin-top:24px;font-size:14px;color:#aab4cc}
+.trust{margin-top:22px;font-size:13.5px;color:#aab4cc;line-height:1.9}
+.whop-badge{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--navy);font-weight:700;font-size:13px;padding:7px 14px;border-radius:8px;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.15);margin-top:18px;border:1px solid #e5e7eb}
+.whop-badge .dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 6px #34d399}
+.trustlogos{margin-top:18px;font-size:13px;color:#9ca3af;font-weight:600;letter-spacing:.3px}
 
 /* PAIN */
 .pain{background:var(--light);padding:70px 0;text-align:center}
 .pain h2{font-size:34px;color:var(--navy);margin-bottom:14px}
 .pain .q{font-size:21px;color:#444;max-width:700px;margin:0 auto 40px}
 .pain-img{max-width:900px;width:100%;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,.12);display:block;margin:0 auto}
+
+/* COMPARISON TABLE */
+.compare{padding:80px 0}
+.compare h2{text-align:center;font-size:34px;color:var(--navy);margin-bottom:14px}
+.compare .sub{text-align:center;color:var(--grey);max-width:620px;margin:0 auto 40px;font-size:16px}
+.compare-table{max-width:840px;margin:0 auto;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 6px 24px rgba(31,42,68,.06)}
+.compare-table th,.compare-table td{padding:18px 22px;text-align:left;border-bottom:1px solid var(--line);font-size:15.5px}
+.compare-table tr:last-child td{border-bottom:none}
+.compare-table thead th{background:var(--navy);color:#fff;font-weight:700;font-size:14px;letter-spacing:.3px}
+.compare-table th:first-child{width:34%}
+.compare-table .col-pro{background:#f4faf4;font-weight:600}
+.compare-table .manual{color:var(--grey)}
+.compare-table .pro{color:var(--green);font-weight:700}
+.compare-table .icon-cross{color:var(--red);font-weight:700}
+.compare-table .icon-check{color:var(--green);font-weight:700}
+
+/* DEMO EMBED */
+.demo{background:var(--light);padding:80px 0;text-align:center}
+.demo h2{font-size:34px;color:var(--navy);margin-bottom:12px}
+.demo .sub{color:var(--grey);max-width:620px;margin:0 auto 30px;font-size:16px}
+.demo-frame{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(31,42,68,.08)}
+.demo-frame iframe{display:block;width:100%;height:560px;border:0}
+.demo .demolink{margin-top:18px;font-size:14px;color:var(--grey)}
+.demo .demolink a{color:var(--navy);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 
 /* FEATURES */
 .features{padding:80px 0}
@@ -100,9 +134,12 @@ a{color:inherit}
 /* FINAL CTA */
 .final{background:linear-gradient(135deg,#1F2A44 0%,#2a3858 100%);color:#fff;padding:90px 0;text-align:center}
 .final h2{font-size:38px;margin-bottom:16px}
-.final p{font-size:19px;color:#cdd5e6;margin-bottom:34px}
+.final p{font-size:19px;color:#cdd5e6;margin-bottom:30px}
 .final .price-tag{font-size:18px;color:#aab4cc;margin-bottom:28px}
 .final .price-tag b{color:var(--gold);font-size:26px}
+.final .trust{margin-top:22px;font-size:13.5px;color:#aab4cc}
+.final .whop-badge{margin-top:18px}
+.final .urgency{display:block;margin:0 auto 24px;width:max-content}
 
 footer{background:#161e30;color:#8893a8;padding:30px 0;text-align:center;font-size:14px}
 
@@ -114,17 +151,30 @@ footer{background:#161e30;color:#8893a8;padding:30px 0;text-align:center;font-si
 </head>
 <body>
 
+<!-- TOP ANNOUNCEMENT BAR -->
+<div class="topbar">
+  <span class="pill">FREE</span>
+  Download the <a href="fees-cheat-sheet.txt" download>Ecommerce Fee Cheat Sheet 2026</a> — every Etsy, Shopify, Amazon &amp; eBay fee in one page.
+</div>
+
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <span class="badge">EXCEL & GOOGLE SHEETS</span>
+    <span class="badge">EXCEL &amp; GOOGLE SHEETS</span>
+    <div class="urgency">🔥 LIMITED-TIME LAUNCH PRICING — $29 → $19</div>
     <h1>Are you actually making money?<br><span class="gold">Know your REAL profit.</span></h1>
-    <p class="sub">Most sellers track revenue. Few track <b>real profit</b>. This tracker calculates your true profit on every order — after platform fees, ads, shipping & tax — automatically.</p>
-    <div class="price-tag"><s>$29</s> &nbsp; Launch price: <b>$19</b></div>
-    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw">Get Instant Access — $19</a>
-    <div style="margin-top:14px"><a href="calculator.html" style="color:#cdd5e6;font-size:15px;text-decoration:underline;text-underline-offset:3px">→ Or try the free profit calculator first</a></div>
-    <div style="margin-top:10px;font-size:13px;color:#9ca3af">Also available on <a href="https://whop.com/glm-643b/ecommerce-profit-tracker-pro-know-your-real-profit" style="color:#9ca3af;text-decoration:underline">Whop Marketplace</a></div>
+    <p class="sub">Most sellers track revenue. Few track <b>real profit</b>. This tracker calculates your true profit on every order — after platform fees, ads, shipping &amp; tax — automatically.</p>
+    <div class="price-block">
+      <span class="strike">$29</span><span class="now">$19</span>
+      <span class="onepay">Lifetime access — one payment, no subscription, use it forever</span>
+    </div>
+    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw">Buy Now — Instant Download ($19)</a>
+    <div style="margin-top:14px"><a href="#demo" style="color:#cdd5e6;font-size:15px;text-decoration:underline;text-underline-offset:3px">→ Or try the free profit calculator first</a></div>
+    <a class="whop-badge" href="https://whop.com/glm-643b/ecommerce-profit-tracker-pro-know-your-real-profit" target="_blank" rel="noopener">
+      <span class="dot"></span> Also available on Whop Marketplace · 4M monthly visitors
+    </a>
     <div class="trust">⚡ Instant download &nbsp;•&nbsp; ✓ Lifetime use &nbsp;•&nbsp; 🔒 Secure checkout &nbsp;•&nbsp; ↩ 14-day money-back</div>
+    <div class="trustlogos">Trusted by sellers on Etsy &nbsp;·&nbsp; Shopify &nbsp;·&nbsp; Amazon &nbsp;·&nbsp; eBay &nbsp;·&nbsp; WooCommerce</div>
   </div>
 </section>
 
@@ -134,6 +184,46 @@ footer{background:#161e30;color:#8893a8;padding:30px 0;text-align:center;font-si
     <h2>The gap most sellers never see</h2>
     <p class="q">A $22 sale can actually <b style="color:var(--red)">lose you money</b> once you count fees, ads & shipping. If you're not subtracting all of it, you don't know your real profit.</p>
     <img class="pain-img" src="shot5_reality.png" alt="Sale price $22 looks profitable but real profit is minus $1.14 after fees and ads">
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="compare">
+  <div class="wrap">
+    <h2>Why sellers switch to Profit Tracker PRO</h2>
+    <p class="sub">The same math, every order — without the spreadsheet gymnastics.</p>
+    <table class="compare-table">
+      <thead>
+        <tr><th>Feature</th><th>Doing it manually</th><th class="col-pro">Profit Tracker PRO</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><b>Track platform fees</b></td>
+          <td class="manual"><span class="icon-cross">✗</span> Manual math per platform, per order</td>
+          <td class="pro"><span class="icon-check">✓</span> Auto-calculated, always current</td>
+        </tr>
+        <tr>
+          <td><b>Know your real profit</b></td>
+          <td class="manual"><span class="icon-cross">✗</span> Guessing after fees &amp; ads</td>
+          <td class="pro"><span class="icon-check">✓</span> Exact net, per order</td>
+        </tr>
+        <tr>
+          <td><b>Time per order</b></td>
+          <td class="manual"><span class="icon-cross">✗</span> 5–10 minutes</td>
+          <td class="pro"><span class="icon-check">✓</span> 30 seconds</td>
+        </tr>
+        <tr>
+          <td><b>Year-end / tax reports</b></td>
+          <td class="manual"><span class="icon-cross">✗</span> Hours of manual totals</td>
+          <td class="pro"><span class="icon-check">✓</span> One-click dashboard</td>
+        </tr>
+        <tr>
+          <td><b>Spot losing products</b></td>
+          <td class="manual"><span class="icon-cross">✗</span> Hidden until it's too late</td>
+          <td class="pro"><span class="icon-check">✓</span> Red/green flagged instantly</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
@@ -159,6 +249,18 @@ footer{background:#161e30;color:#8893a8;padding:30px 0;text-align:center;font-si
     <div class="shot"><img src="shot1_dashboard.png" alt="Profit dashboard showing total revenue total profit and profit margin"><div class="cap">Dashboard — your whole business at a glance</div></div>
     <div class="shot"><img src="shot2_orders.png" alt="Orders list with green profit rows and red loss rows"><div class="cap">Orders — color-coded green (profit) & red (loss)</div></div>
     <div class="shot"><img src="shot3_products.png" alt="Product profit ranking showing winners and money losers"><div class="cap">Product Ranking — winners vs money-losers</div></div>
+  </div>
+</section>
+
+<!-- DEMO / TRY FREE -->
+<section class="demo" id="demo">
+  <div class="wrap">
+    <h2>Try it free — live profit calculator</h2>
+    <p class="sub">Plug in your own numbers and see real profit per order instantly. No signup. Works for Etsy, Shopify, Amazon &amp; eBay.</p>
+    <div class="demo-frame">
+      <iframe src="calculator.html" title="Free Ecommerce Profit Calculator" loading="lazy"></iframe>
+    </div>
+    <p class="demolink">→ <a href="calculator.html" target="_blank" rel="noopener">Open calculator in full page</a></p>
   </div>
 </section>
 
@@ -221,10 +323,15 @@ footer{background:#161e30;color:#8893a8;padding:30px 0;text-align:center;font-si
 <!-- FINAL CTA -->
 <section class="final">
   <div class="wrap">
+    <span class="urgency">🔥 LAUNCH PRICING — ENDS SOON</span>
     <h2>Stop guessing. Start counting.</h2>
     <p>See your real profit today — and fix the orders that are losing you money.</p>
     <div class="price-tag"><s>$29</s> &nbsp; Launch price: <b>$19</b></div>
-    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw">Get Instant Access — $19</a>
+    <a class="cta" href="https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw">Buy Now — Instant Download ($19)</a>
+    <a class="whop-badge" href="https://whop.com/glm-643b/ecommerce-profit-tracker-pro-know-your-real-profit" target="_blank" rel="noopener">
+      <span class="dot"></span> Buy on Whop Marketplace · 4M monthly visitors
+    </a>
+    <div class="trust">↩ 14-day money-back guarantee &nbsp;•&nbsp; ✓ Lifetime access, one payment &nbsp;•&nbsp; 🔒 Secure checkout (card or PayPal)</div>
   </div>
 </section>
 

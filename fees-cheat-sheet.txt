@@ -1,0 +1,96 @@
+ECOMMERCE FEE CHEAT SHEET 2026
+=================================
+Quick reference for Etsy, Shopify, Amazon FBA & eBay — the silent margin killers.
+Source: ecommerce-profit-tracker · CC0 reference data. Verify on official platform pages.
+
+------------------------------------------------------------
+ETSY (2026)
+------------------------------------------------------------
+Listing fee              $0.20   per listing, auto-renews
+Transaction fee          6.5%    of (item price + shipping)
+Payment processing       3% + $0.25  on (item + shipping)
+Offsite ads              12-15%  only if sale via Offsite Ads click
+                                 (12% under $10k sales, 15% over)
+
+Worked example — $30 item, $8 shipping, $8 materials, no offsite ad:
+  Sale basis:         $38.00
+  Listing:            -$0.20
+  Transaction (6.5%): -$2.47
+  Processing (3%+.25):-$1.39
+  Materials:          -$8.00
+  Shipping (est):     -$3.00
+  -----------------------------------
+  Net profit:         $22.94   (76% margin on item)
+
+------------------------------------------------------------
+AMAZON FBA (2026)
+------------------------------------------------------------
+Referral fee            8-15%   (15% in most categories)
+FBA fulfillment         ~$3.00-$5.50 / unit (size/weight)
+Monthly storage         ~$0.83/cu.ft (Jan-Sep), doubles in Q4
+Inbound placement       varies (new in 2024)
+PPC advertising         10-25% of revenue (seller-controlled)
+
+Worked example — $25 product, $5 COGS, standard size, 15% PPC:
+  Sale:               $25.00
+  Referral (15%):     -$3.75
+  FBA fulfillment:    -$3.22
+  Storage/unit:       -$0.50
+  PPC (15%):          -$3.75
+  Inbound:            -$0.30
+  COGS:               -$5.00
+  -----------------------------------
+  Net profit:         $8.48    (33.9% margin)
+
+------------------------------------------------------------
+eBAY (2026)
+------------------------------------------------------------
+Insertion               $0.35 after 250 free/mo
+Final value             13.25%  of (item + shipping + tax)
+Per-order               $0.30
+Promoted Listings       2-10%   only on attributed sale
+
+⚠ TRAP: Final value fee applies to SHIPPING too.
+"Free shipping" isn't free — you pay 13.25% on it.
+
+Worked example — $40 item, $8 shipping, $20 COGS, $9.50 actual shipping:
+  Sale basis:         $48.00
+  Final value (13.25%):-$6.36
+  Per-order:          -$0.30
+  Actual shipping:    -$9.50
+  COGS:               -$20.00
+  -----------------------------------
+  Net profit:         $11.84   (29.6% margin on item)
+
+------------------------------------------------------------
+SHOPIFY (2026)
+------------------------------------------------------------
+Basic plan              $39/mo
+Online CC fee           2.9% + $0.30 (Basic)
+Transaction (non-S-Pay) 2%      (Basic)
+
+------------------------------------------------------------
+STOP DOING THIS MATH BY HAND
+------------------------------------------------------------
+The Ecommerce Profit Tracker PRO spreadsheet does it all for you:
+
+  ✅ Real profit per order, auto-calculated after fees/ads/shipping
+  ✅ Color-coded green/red — spot losing orders instantly
+  ✅ Dashboard: total revenue, profit, margin %, by-channel
+  ✅ Inventory tracker + Invoice Maker
+  ✅ Works in Excel AND Google Sheets — no macros
+  ✅ $19 one-time, lifetime use, 14-day money-back guarantee
+
+Buy on Whop Marketplace:
+  https://whop.com/glm-643b/ecommerce-profit-tracker-pro-know-your-real-profit
+
+Or direct checkout (card or PayPal):
+  https://checkout.dodopayments.com/buy/pdt_0NgyJZrFRp8kbH94N0kjw
+
+Try the free calculator first:
+  https://limin6661.github.io/ecommerce-profit-tracker/calculator.html
+
+------------------------------------------------------------
+License: Fee data is public reference information (CC0).
+The Profit Tracker spreadsheet is a separate paid product.
+------------------------------------------------------------
